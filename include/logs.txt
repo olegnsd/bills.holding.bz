@@ -1,0 +1,40 @@
+24.03.2017 09:47:49| INSERT INTO users (hash, name, service) VALUES ('8b0419e4eedd0800cb2c66bea05d35a2', 'Алексей Cheha@ya.ru 89093886622', 'Миелофон')
+1062: Duplicate entry '8b0419e4eedd0800cb2c66bea05d35a2' for key 'hash'
+17.04.2018 15:54:59| INSERT INTO users (hash, name, service) VALUES ('88ca5562a95eb8b9f8c02aa7754baf93', 'test', 'Прочие доходы')
+1062: Duplicate entry '88ca5562a95eb8b9f8c02aa7754baf93' for key 'hash'
+17.04.2018 16:00:55| select * from `users` `t1` WHERE service=:service
+1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':service' at line 1
+17.04.2018 16:00:55| select sum(balance) as summ from `users` `t1` WHERE service=:service AND balance<0 LIMIT 1
+1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':service AND balance<0 LIMIT 1' at line 1
+17.04.2018 16:00:55| select sum(t1.amount) as summ from `statistics` `t1` left join users t2 ON t2.id=t1.userId WHERE t1.code=1 AND t2.service=:service LIMIT 1
+1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':service LIMIT 1' at line 1
+17.04.2018 16:07:40| INSERT INTO users (hash, name, service) VALUES ('88ca5562a95eb8b9f8c02aa7754baf93', 'test', 'Прочие доходы')
+1062: Duplicate entry '88ca5562a95eb8b9f8c02aa7754baf93' for key 'hash'
+17.04.2018 16:07:44| INSERT INTO users (hash, name, service) VALUES ('f66b058755ffe3fc312a58adec69a5db', 'test2', 'Прочие доходы')
+1062: Duplicate entry 'f66b058755ffe3fc312a58adec69a5db' for key 'hash'
+30.04.2018 16:47:05| UPDATE users SET sendPhoneTime=1525193139 WHERE id=238
+2006: MySQL server has gone away
+30.04.2018 16:56:17| UPDATE users SET sendPhoneTime=1525193712 WHERE id=195
+2006: MySQL server has gone away
+15.05.2018 15:22:25| UPDATE users SET balance=`balance`-31000 WHERE id=248
+2006: MySQL server has gone away
+23.05.2018 07:18:53| UPDATE users SET sendPhoneTime=1527146250 WHERE id=84
+2006: MySQL server has gone away
+23.05.2018 07:27:09| UPDATE users SET sendPhoneTime=1527146758 WHERE id=259
+2006: MySQL server has gone away
+27.05.2018 07:34:41| UPDATE users SET sendPhoneTime=1527492803 WHERE id=88
+2006: MySQL server has gone away
+28.05.2018 14:34:11| UPDATE users SET sendPhoneTime=1527604381 WHERE id=7
+2006: MySQL server has gone away
+08.06.2018 15:21:44| UPDATE users SET sendPhoneTime=1528557623 WHERE id=266
+2006: MySQL server has gone away
+21.06.2018 22:39:20| select * from `statistics` `t1` WHERE userId= ORDER BY id DESC
+1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ORDER BY id DESC' at line 1
+19.08.2018 08:02:19| INSERT INTO users (hash, name, service) VALUES ('48783253e38d805430c67fc83d118ba0', 'Кириенко ТЕСТ', 'Миелофон')
+1062: Duplicate entry '48783253e38d805430c67fc83d118ba0' for key 'hash'
+22.01.2019 22:02:46| INSERT INTO users (hash, name, service) VALUES ('ee5841cbdc62e3fa2d951b08103af329', 'Владимир 100 Квадратов', 'Миелофон')
+1062: Duplicate entry 'ee5841cbdc62e3fa2d951b08103af329' for key 'hash'
+25.01.2019 05:05:14| INSERT INTO users (hash, name, service) VALUES ('37d460e3bbf1b7fcfc4f8f185c790727', 'Тимур Хамадеев тест', 'Миелофон')
+1062: Duplicate entry '37d460e3bbf1b7fcfc4f8f185c790727' for key 'hash'
+26.01.2019 11:23:20| INSERT INTO users (hash, name, service) VALUES ('269d49b51da1e4b3fe76231447fb3754', 'Карина Григорян реф', 'EasyWork24')
+1062: Duplicate entry '269d49b51da1e4b3fe76231447fb3754' for key 'hash'

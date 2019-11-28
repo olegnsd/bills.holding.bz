@@ -2,9 +2,9 @@
 $ar=array();
 $ar["TYPE"]="mysql";
 $ar["HOST"]="localhost";
-$ar["LOGIN"]="wizardgrp_bills";
-$ar["PASS"]="JdsIqhv2V8";
-$ar["DATABASE"]="wizardgrp_bills";
+$ar["LOGIN"]=""; // Имя пользователя базы данных
+$ar["PASS"]=""; // Пароль
+$ar["DATABASE"]=""; // Имя базы данных
 
 $SETTINGS["SQL"]=$ar;
 $connection = @mysqli_connect($SETTINGS["SQL"]["HOST"], $SETTINGS["SQL"]["LOGIN"], $SETTINGS["SQL"]["PASS"], $SETTINGS["SQL"]["DATABASE"]);
